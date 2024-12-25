@@ -17,11 +17,12 @@ const FlowerLogo: React.FC<FlowerLogoProps> = ({ }) => {
         <TouchableOpacity style={styles.container} onPress={()=>{animation.current?.reset(); animation.current?.play()}}>
             <LottieView
                 autoPlay
+                speed={.5}
                 loop={false}
                 ref={animation}
                 style={{
                     width: 120,
-                    height: 150,
+                    height: 110, /// change back to 150+ for modern iphones
                     // backgroundColor: '#eee',
                 }}
                 // Find more Lottie files at https://lottiefiles.com/featured

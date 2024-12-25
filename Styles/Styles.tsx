@@ -77,19 +77,31 @@ export const extraStyles = StyleSheet.create({
 export const textStyles = StyleSheet.create({
     h1:{
         fontSize: 30,
-        color:'#6e3d0f'
+        color:'#6e3d0f',
+        fontFamily: 'Handlee-Regular',
+        lineHeight: 40,
+        textAlign: 'center',
     },
     h2: {
         fontSize:24,
-        color:'#6e3d0f'
+        color:'#6e3d0f',
+        fontFamily: 'Handlee-Regular',
+        lineHeight: 30,
+        textAlign: 'center',
     },
     h3:{
         fontSize:20,
-        color:'#6e3d0f'
+        color:'#6e3d0f',
+        fontFamily: 'Handlee-Regular',
+        lineHeight: 26,
+        textAlign: 'center',
     },
     h4: {
         fontSize: 18,
-        color:'#6e3d0f'
+        color:'#6e3d0f',
+        fontFamily: 'Handlee-Regular',
+        lineHeight: 20,
+        textAlign: 'center',
     },
     entryText: {
         fontFamily: 'Handlee-Regular', // Use your custom font here

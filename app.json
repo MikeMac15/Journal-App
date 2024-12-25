@@ -13,9 +13,7 @@
       "googleServicesFile": "./GoogleService-Info.plist",
       "bundleIdentifier": "com.anonymous.jb-journal",
       "infoPlist": {
-        "UIAppFonts": [
-          "./assets/fonts/HomemadeApple_Regular.ttf"
-        ]
+        
       }
     },
     "android": {
@@ -58,7 +56,7 @@
         "expo-font",
         {
           "fonts": [
-            "./assets/fonts/HomemadeApple_Regular.ttf",
+            "./assets/fonts/HomemadeApple-Regular.ttf",
             "./assets/fonts/Handlee-Regular.ttf"
           ]
         }
