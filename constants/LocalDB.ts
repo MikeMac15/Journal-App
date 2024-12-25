@@ -94,6 +94,7 @@ export interface SQLiteJournalMetaData {
     summary: string | null;
     num_of_photos: number;
     tags?: string[] | null;
+    last_updated: string;
 }
 
 export const addJournalEntry = async (
@@ -170,6 +171,7 @@ SQLiteJournalMetaData[]> => {
             photo_uri: string | null;
             summary: string | null;
             num_of_photos: number;
+            last_updated: string;
         }[] = await db.getAllAsync(`SELECT firestore_id, date, location, photo_uri, summary, num_of_photos FROM journalEntries;`);
         return entries;
     } catch (error) {

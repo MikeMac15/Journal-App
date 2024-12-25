@@ -56,6 +56,12 @@ const Home: React.FC<HomeProps> = () => {
         );
     }
 
+    // const deleteErryTing = async () => {
+    //     await deleteDB();
+    //     userContext.LRUCache.ClearCache();
+    //     console.log('Deleted everything');
+    // }
+
 
     // Extract dates for calendar highlights
     const journalEntryDates = journalMetaData.map(entry => entry.date);
@@ -63,7 +69,7 @@ const Home: React.FC<HomeProps> = () => {
     return (
         <SafeAreaView style={{ justifyContent: 'center', alignItems: 'center' }}>
             <ScrollView>
-
+            {/* <Button title="Delete DB" onPress={()=>deleteErryTing() } /> */}
             <View style={{}}>
 
                 <AboveCalendar date={selectedDate} setShowMenu={setShowMenu} showMenu={showMenu} />
@@ -72,7 +78,7 @@ const Home: React.FC<HomeProps> = () => {
                 <Menu showMenu={showMenu} setShowMenu={setShowMenu}/>
             </View>
            
-            <View style={{}}>
+            <View style={{transform:[{scale:.95}]}}>
 
                 <Calendar setDate={setSelectedDate} journalEntryDates={journalEntryDates} />
             </View>

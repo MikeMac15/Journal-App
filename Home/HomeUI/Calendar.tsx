@@ -37,11 +37,13 @@ const MyCalendar: React.FC<CalendarProps> = ({ setDate, journalEntryDates }) => 
     return (
         <View style={[styles.container]}>
             <Calendar
-                style={{
-                    width: width-20,
-                    
-                }}
-                theme={{
+            
+            style={{
+                width: width-10,
+                
+            }}
+            theme={{
+                    arrowColor: '#fc569e',
                     textDayFontFamily: 'Handlee-Regular',
                     textMonthFontFamily: 'Handlee-Regular',
                     textDayHeaderFontFamily: 'Handlee-Regular',
